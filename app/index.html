@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="Portfolio" lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="Portfolio" lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="Portfolio" lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="Portfolio"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/css/bootstrap.css">
+  <link rel="stylesheet" href="styles/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="styles/css/style-old.css">
+</head>
+<body>
+  <!-- BODY -->
+  <div ng-view></div>
+
+  <!-- FOOTER -->
+  <div class="clearfix"></div>
+  <div class="footer">
+    <h5>Copyright &#169; 2016 kasperbfrank.dk</h5>
+  </div>
+
+
+  <!-- scripts -->
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="javascript/vendor/jquery-2.2.0.min.js"></script>
+  <script src="javascript/vendor/bootstrap.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+
+  <!-- App -->
+  <script src="javascript/app.js"></script>
+  <script src="javascript/routes.js"></script>
+  <!-- Directives -->
+  <!-- Controllers -->
+  <script src="javascript/controllers/portfolioIndexController.js"></script>
+  <script src="javascript/controllers/portfolioProjectController.js"></script>
+
+  <!-- Services -->
+  <script src="javascript/services/project.js"></script>
+</body>
+</html>

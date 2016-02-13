@@ -1,0 +1,8 @@
+[
+    {"id": 1, "name": "project1", "imageUrl": "img/random-images/1.jpg", "description": "", "skills": []},
+    {"id": 2, "name": "project2", "imageUrl": "img/random-images/2.jpg", "description": "", "skills": []},
+    {"id": 3, "name": "project3", "imageUrl": "img/random-images/3.jpg", "description": "", "skills": []},
+    {"id": 4, "name": "project4", "imageUrl": "img/random-images/4.png", "description": "", "skills": []},
+    {"id": 5, "name": "project5", "imageUrl": "img/random-images/5.jpg", "description": "", "skills": []},
+    {"id": 6, "name": "project6", "imageUrl": "img/random-images/6.png", "description": "", "skills": []}
+]
