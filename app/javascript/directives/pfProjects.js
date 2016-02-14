@@ -9,9 +9,7 @@
     function pfProjects() {
         var directive = {
             restrict: 'EA',
-            templateUrl: 'partials/portfolio/projects.html',
-            controller: 'PortfolioIndexController',
-            controllerAs: 'pfIndexCtrl'
+            templateUrl: 'partials/portfolio/projects.html'
         };
 
         return directive;

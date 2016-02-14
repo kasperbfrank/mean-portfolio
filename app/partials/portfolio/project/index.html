@@ -1,3 +1,10 @@
-<h2>Portfolio project</h2>
-<a href="/app">back</a>
-<h3>{{pfProjectCtrl.currentProject.name}}</h3>
+<h2>{{pfProjectCtrl.currentProject.name}}</h2>
+<div class="container">
+    <a href="/app/#/">back</a>
+    <pf-project-image-carousel></pf-project-image-carousel>
+    <img ng-src="{{pfProjectCtrl.currentProject.imageUrl}}" alt="project image" />
+    <div class="row">
+        <pf-project-brief></pf-project-brief>
+        <pf-project-prototype></pf-project-prototype>
+    </div>
+</div>

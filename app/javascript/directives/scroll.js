@@ -32,7 +32,7 @@
                     };
 
                     if (_isScrolledIntoView(jQuery('.about-header'))) {
-                        jQuery('.about-content').delay(200).addClass('animated fadeInDown');
+                        jQuery('.about-content').addClass('animated fadeIn');
                     }
                 });
             }

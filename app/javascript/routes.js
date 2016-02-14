@@ -5,7 +5,9 @@
       //   redirectTo: '/portfolio'
       // })
       .when('/', {
-        templateUrl: "partials/portfolio/index.html"
+        templateUrl: "partials/portfolio/index.html",
+        controller: 'PortfolioIndexController',
+        controllerAs: 'pfIndexCtrl'
       })
       .when('/portfolio/:project', {
         templateUrl: "partials/portfolio/project/index.html",
