@@ -6,11 +6,13 @@
       // })
       .when('/', {
         templateUrl: "partials/portfolio/index.html",
-        controller: "PortfolioIndexController"
+        controller: "PortfolioIndexController",
+        controllerAs: "pfIndexCtrl"
       })
       .when('/portfolio/:project', {
         templateUrl: "partials/portfolio/project.html",
-        controller: "PortfolioProjectController"
+        controller: "PortfolioProjectController",
+        controllerAs: "pfProjectCtrl"
       })
   });
 })();

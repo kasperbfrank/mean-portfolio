@@ -1,47 +1,68 @@
-(function(){
-  angular.module('Portfolio').controller('PortfolioIndexController', function($scope, Project) {
-    Project.all().success(function(data) {
-      $scope.projects = data;
-    });
+(function() {
+    'use strict';
 
-    $scope.scrollToProjects = function() {
-      $('html, body').animate({
-        scrollTop: $('.projects').offset().top
-      }, 750, 'swing');
-    };
+    angular
+        .module('Portfolio')
+        .controller('PortfolioIndexController', PortfolioIndexController);
 
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-      var $img = $('.project-image');
-      if (isScrolledIntoView($img.first())) {
-        $img.each(function(i) {
-          $(this).delay(i * 200).animate({
-            opacity: 1,
-            top: '0px'
-          }, 400);
-        });
-      }
+    PortfolioIndexController.$inject = ['$scope', 'projectFactory'];
 
-      if (isScrolledIntoView($('.about-header'))) {
-        $('.about-content').delay(200).animate({
-          opacity: 1,
-          top: '0px'
-        }, 500);
-      }
-    });
+    /* @ngInject */
+    function PortfolioIndexController($scope, projectFactory) {
+        var vm = this;
+        vm.projects = [];
+        vm.scrollToProjects = function() {
+          jQuery('html, body').animate({
+            scrollTop: jQuery('.projects').offset().top
+          }, 750, 'swing');
+        };
 
-    function isScrolledIntoView(elem) {
-      if (elem.length) {
-        var $window = $(window);
+        activate();
 
-        var docViewTop = $window.scrollTop();
-        var docViewBottom = docViewTop + $window.height();
+        function activate() {
+          jQuery(window)
+          .on('scroll', scrollHandler)
+          .on('resize', scrollHandler);
+          getProjects();
+        }
 
-        var elemTop = elem.offset().top;
-        var elemBottom = elemTop + elem.height();
+        function getProjects() {
+          projectFactory.all().success(function(data) {
+            vm.projects = data;
+          });
+        }
 
-        return (elemBottom <= docViewBottom);
-      }
+        function scrollHandler() {
+          var img = jQuery('.project-image');
+          if (isScrolledIntoView(img.first())) {
+            img.each(function(i) {
+              jQuery(this).delay(i * 200).animate({
+                opacity: 1,
+                top: '0px'
+              }, 400);
+            });
+          }
+
+          if (isScrolledIntoView(jQuery('.about-header'))) {
+            jQuery('.about-content').delay(200).animate({
+              opacity: 1,
+              top: '0px'
+            }, 500);
+          }
+        }
+
+        function isScrolledIntoView(elem) {
+          if (elem.length) {
+            var w = jQuery(window);
+
+            var docViewTop = w.scrollTop();
+            var docViewBottom = docViewTop + w.height();
+
+            var elemTop = elem.offset().top;
+            var elemBottom = elemTop + elem.height();
+
+            return (elemBottom <= docViewBottom);
+          }
+        }
     }
-  });
 })();

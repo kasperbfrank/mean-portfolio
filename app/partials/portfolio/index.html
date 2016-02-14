@@ -1,7 +1,7 @@
 <div class="intro">
   <!-- HEADER -->
   <div class="container">
-    <div class="social-bar">
+    <div class="links-bar">
       <ul class="social-list list-unstyled">
         <li><a href="https://dk.linkedin.com/in/kasper-bruus-frank-660913b4"><img src="../app/img/social-media-icons/ln.png"></a></li>
         <li><a href="https://www.facebook.com/kasper.bruus.frank"><img src="../app/img/social-media-icons/fb.png"></a></li>
@@ -23,7 +23,7 @@
     </div>
     <div class="row">
       <div class="portfolio-scroll-button-container">
-        <img src="../app/img/ui/down-button-shadow.png" ng-click="scrollToProjects()">
+        <img src="../app/img/ui/down-button-shadow.png" ng-click="pfIndexCtrl.scrollToProjects()">
       </div>
     </div>
   </div>
@@ -32,7 +32,7 @@
   <div class="container">
     <h2>Portfolio</h2>
     <div class="no-gutter">
-      <a ng-repeat="project in projects" ng-href="#/portfolio/{{project.name}}">
+      <a ng-repeat="project in pfIndexCtrl.projects" ng-href="#/portfolio/{{project.name}}">
         <div class="col-md-4 col-sm-12 project-image">
           <img src="img/random-images/2.jpg">
         </div>
@@ -55,7 +55,7 @@
         ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
         Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
         <div class="">
-          <h3>Skills</h3>
+          <h4>Skills</h4>
           <div class="col-md-6">
             <ul class="list-unstyled">
               <li class="skills-list-item">Programming</li>
@@ -90,14 +90,12 @@
       <h4>+45 28 15 63 36</h4>
     </div>
     <div class="col-md-4">
-      <h3>Social media</h3>
-      <div class="social-bar-bottom">
-        <ul class="social-list list-unstyled">
-          <li><a href="https://dk.linkedin.com/in/kasper-bruus-frank-660913b4"><img src="../app/img/social-media-icons/ln-dark.png"></a></li>
-          <li><a href="https://www.facebook.com/kasper.bruus.frank"><img src="../app/img/social-media-icons/fb-dark.png"></a></li>
-          <li><a href="https://twitter.com/kasperbfrank"><img src="../app/img/social-media-icons/twitter-dark.png"></a></li>
-        </ul>
-      </div>
+      <h3>Links</h3>
+      <ul class="social-list list-unstyled">
+        <li><a href="https://dk.linkedin.com/in/kasper-bruus-frank-660913b4"><img src="../app/img/social-media-icons/ln-dark.png"></a></li>
+        <li><a href="https://www.facebook.com/kasper.bruus.frank"><img src="../app/img/social-media-icons/fb-dark.png"></a></li>
+        <li><a href="https://twitter.com/kasperbfrank"><img src="../app/img/social-media-icons/twitter-dark.png"></a></li>
+      </ul>
     </div>
   </div>
 </div>
