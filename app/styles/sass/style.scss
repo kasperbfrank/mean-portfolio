@@ -5,6 +5,16 @@
   }
 }
 
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// end of mixins
+
 body {
   font-size: 16px;
   @include respond-to(1024px) {
@@ -39,7 +49,7 @@ h3 {
   margin-top: 20px;
 }
 
-.projects {
+.projects-container {
   margin-top: 30px;
 }
 
@@ -54,11 +64,11 @@ h3 {
     padding: 12px;
     img {
       height: 30px;
-      transition: all 0.3s;
+      @include transition(all .3s);
       overflow: hidden;
       &:hover {
         transform: scale(1.2);
-        transition: all 0.3s;
+        @include transition(all .3s);
       }
     }
   }
@@ -124,10 +134,10 @@ h3 {
   text-align: center;
   img {
     height: 130px;
-    transition: all 0.3s;
+    @include transition(all .3s);
     &:hover {
       transform: scale(1.2);
-      transition: all 0.3s;
+      @include transition(all .3s);
       cursor: pointer;
     }
   }
@@ -173,7 +183,6 @@ h3 {
 
 .about-content {
   position: relative;
-  top: -100px;
   opacity: 0;
 }
 
