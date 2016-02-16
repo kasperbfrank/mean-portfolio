@@ -10,7 +10,8 @@
   /* @ngInject */
   function projectFactory($http) {
     var service = {
-      all: getAll
+      all: getAll,
+      getFirst: getFirst
     };
 
     return service;
@@ -20,6 +21,13 @@
         method: 'GET',
         url: 'data/projects.json'
       });
+    }
+
+    function getFirst() {
+        return $http({
+            method: 'GET',
+            url: 'http://localhost:3000/contacts/1'
+        });
     }
   }
 })();

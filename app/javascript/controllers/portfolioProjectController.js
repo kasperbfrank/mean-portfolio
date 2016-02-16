@@ -12,6 +12,9 @@
     var vm = this;
     vm.currentProject = {};
 
+    // testVar to hold testdb variable
+    vm.testVar = {};
+
     activate();
 
     function activate() {
@@ -22,6 +25,10 @@
             vm.currentProject = proj;
           }
         }
+      });
+
+      projectFactory.getFirst().success(function(data) {
+         vm.testVar = data;
       });
     }
   }
