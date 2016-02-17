@@ -92,7 +92,7 @@ h3 {
       font-size: 2.5em;
     };
     @include respond-to(320px) {
-      font-size: 2.2em;
+      font-size: 1.8em;
     };
     strong {
       color: #FFFF00;
@@ -137,6 +137,10 @@ h3 {
   text-align: center;
   img {
     height: 130px;
+    @include respond-to(414px) {
+        height: 90px;
+        bottom: 5%;
+    }
     @include transition(all .3s);
     &:hover {
       transform: scale(1.2);
