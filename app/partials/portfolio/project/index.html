@@ -1,11 +1,13 @@
 <h2>{{pfProjectCtrl.currentProject.name}}</h2>
 <h2>testVar.email: {{pfProjectCtrl.testVar.email}}</h2>
-<div class="container">
+<div class="container project-container">
     <a href="/#/">back</a>
-    <pf-project-image-carousel></pf-project-image-carousel>
-    <img ng-src="{{pfProjectCtrl.currentProject.imageUrl}}" alt="project image" />
+    <div ng-include="'partials/portfolio/project/pf-project-image-carousel.html'"></div>
     <div class="row">
-        <pf-project-brief></pf-project-brief>
-        <pf-project-prototype></pf-project-prototype>
+        <div ng-include="'partials/portfolio/project/pf-project-brief.html'"></div>
+        <div ng-include="'partials/portfolio/project/pf-project-concept.html'"></div>
+    </div>
+    <div class="row">
+        <div ng-include="'partials/portfolio/project/pf-project-prototype.html'"></div>
     </div>
 </div>
