@@ -201,3 +201,10 @@ h3 {
   border-radius: 7px;
   background-color: #f5f5f5;
 }
+
+.project-container {
+    img {
+        width: 100%;
+        overflow: hidden;
+    }
+}

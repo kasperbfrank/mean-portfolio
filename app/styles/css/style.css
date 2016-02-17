@@ -245,3 +245,9 @@ h3 {
   border-radius: 7px;
   background-color: #f5f5f5;
 }
+
+/* line 206, ../sass/style.scss */
+.project-container img {
+  width: 100%;
+  overflow: hidden;
+}
