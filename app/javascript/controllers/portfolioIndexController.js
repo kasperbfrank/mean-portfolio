@@ -5,10 +5,10 @@
         .module('Portfolio')
         .controller('PortfolioIndexController', PortfolioIndexController);
 
-    PortfolioIndexController.$inject = ['projectFactory'];
+    PortfolioIndexController.$inject = ['$scope','$window' , 'projectFactory'];
 
     /* @ngInject */
-    function PortfolioIndexController(projectFactory) {
+    function PortfolioIndexController($scope, $window, projectFactory) {
         var vm = this;
         vm.projects = [];
 
@@ -23,5 +23,11 @@
             vm.projects = data;
           });
         }
+
+        $scope.$on('$locationChangeStart', function() {
+            jQuery('#load-overlay').css('opacity', '1');
+            jQuery('#load-overlay-white').css('opacity', '1');
+            $window.scrollTo(0, 0);
+        });
     }
 })();

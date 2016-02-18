@@ -1,4 +1,4 @@
-/*! 
+/*!
  * angular-loading-bar v0.8.0
  * https://chieffancypants.github.io/angular-loading-bar
  * Copyright (c) 2015 Wes Cruver
@@ -306,6 +306,7 @@ angular.module('cfp.loadingBar', [])
           if (promise && promise.then) {
             promise.then(_completeAnimation);
           }
+          $rootScope.$broadcast('cfpLoadingBar:completedAll'); // ADDED BY KASPER: all $http requests are not finished before this points, so we should broadcast a completedAll message here..
           $animate.leave(spinner);
         }, 500);
       }

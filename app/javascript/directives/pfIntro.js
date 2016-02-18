@@ -24,7 +24,7 @@
                     jQuery('#typed').typed({
                         strings: stringsArray,
                         typeSpeed: 50,
-                        startDelay: 500,
+                        startDelay: 1000,
                         backSpeed: 10,
                         backDelay: 1500,
                         loop: true,

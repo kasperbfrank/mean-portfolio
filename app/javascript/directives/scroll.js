@@ -32,15 +32,14 @@
                     };
 
                     if (_isScrolledIntoView(jQuery('.about-header'))) {
-                        // jQuery('.about-content').addClass('animated fadeIn');
-                        jQuery('.about-left').delay(200).animate({
+                        jQuery('.about-left').animate({
                             opacity: 1,
                             left: '0'
-                        }, 1000);
-                        jQuery('.about-right').delay(200).animate({
+                        }, 500);
+                        jQuery('.about-right').animate({
                             opacity: 1,
                             right: '0'
-                        }, 1000, animateExtraInfo);
+                        }, 500, animateExtraInfo);
                     }
                     function animateExtraInfo() {
                         var extraInfoPartContainer = jQuery('.extra-info-part-container');
