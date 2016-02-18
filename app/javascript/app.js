@@ -4,7 +4,9 @@
   // Declare app level module which depends on views, and components
   angular
     .module('Portfolio', [
-      'ngRoute'
+      'ngRoute',
+      'angular-loading-bar',
+      'ngAnimate'
     ])
     .config(_configApply);
 

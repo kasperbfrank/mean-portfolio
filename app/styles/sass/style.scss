@@ -18,11 +18,26 @@ $header-color: lighten(#000000, 40%);
 
 // start
 
+html, body {
+    width: 100%;
+}
+
 body {
   font-size: 16px;
   @include respond-to(1024px) {
     font-size: 14px;
   };
+}
+
+#load-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background-color: #38C5FF;
+    z-index: 1000;
+    opacity: 1;
+    pointer-events: none;
 }
 
 h2 {
@@ -240,4 +255,14 @@ h3 {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+// override angular-loading-bar
+
+#loading-bar .bar {
+  background: yellow;
+}
+#loading-bar-spinner .spinner-icon {
+  border-top-color:  yellow;
+  border-left-color: yellow;
 }

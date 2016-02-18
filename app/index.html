@@ -12,9 +12,13 @@
   <link rel="stylesheet" href="styles/css/bootstrap.css">
   <link rel="stylesheet" href="styles/css/bootstrap-theme.css">
   <link rel="stylesheet" href="styles/css/animate.css">
+  <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css" media="all">
   <link rel="stylesheet" href="styles/css/style.css">
 </head>
 <body>
+    <div id="load-overlay" pf-load>
+
+    </div>
   <!-- BODY -->
   <div ng-view></div>
 
@@ -32,13 +36,16 @@
   <script src="javascript/vendor/jquery-2.2.0.min.js"></script>
   <script src="javascript/vendor/bootstrap.js"></script>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/typed.js/js/typed.js"></script>
+  <script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
 
   <!-- App -->
   <script src="javascript/app.js"></script>
   <script src="javascript/routes.js"></script>
   <!-- Directives -->
+  <script src="javascript/directives/pfLoad.js"></script>
   <script src="javascript/directives/scroll.js"></script>
   <script src="javascript/directives/scrollToProjectsButton.js"></script>
   <script src="javascript/directives/pfProjects.js"></script>
