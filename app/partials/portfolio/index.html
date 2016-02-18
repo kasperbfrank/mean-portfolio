@@ -13,13 +13,7 @@
 
       <!-- BODY -->
       <div class="container description-container">
-          <pf-intro></pf-intro>
-        <!-- <div class="row">
-          <div class="col-md-10 col-sm-12">
-            <h1>Hi,</h1>
-            <h1>I'm <strong>Kasper</strong> and I love to design and create prototypes and IT Products.</h1>
-          </div>
-        </div> -->
+        <pf-intro></pf-intro>
         <div class="row portfolio-guide">
           <h3>Check out my portfolio below!</h3>
         </div>
@@ -34,56 +28,23 @@
         <h2>Portfolio</h2>
         <pf-projects></pf-projects>
     </div>
-    <div class="about">
-      <div class="container">
-        <div class="row">
+      <div class="container about-container">
           <h2 class="about-header">About me</h2>
-        </div>
-        <div class="row about-content">
-          <div class="col-md-6 col-sm-12">
-            <img src="img/kasper-rust.png" alt="Image of Kasper" />
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <!-- text -->
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
-            ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-            Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-            <div class="">
-              <h4>Skills</h4>
-              <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li class="skills-list-item">Programming</li>
-                  <li class="skills-list-item">Interaction design</li>
-                  <li class="skills-list-item">Physical design</li>
-                  <li class="skills-list-item">Prototyping</li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li class="skills-list-item">Agile development</li>
-                  <li class="skills-list-item">Participartory design</li>
-                  <li class="skills-list-item">Project management</li>
-                  <li class="skills-list-item">Innovation processes</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+          <div ng-include="'partials/portfolio/about-me.html'"></div>
       </div>
-    </div>
     <div class="container extra-info">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 extra-info-part-container">
           <h3>Location</h3>
           <h4>8000 Aarhus C</h4>
           <h4>Denmark</h4>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 extra-info-part-container">
           <h3>Contact info</h3>
           <h4>kasperbfrank@gmail.com</h4>
           <h4>+45 28 15 63 36</h4>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 extra-info-part-container">
           <h3>Links</h3>
           <ul class="social-list list-unstyled">
             <li><a href="https://dk.linkedin.com/in/kasper-bruus-frank-660913b4"><img src="img/social-media-icons/ln-dark.png"></a></li>

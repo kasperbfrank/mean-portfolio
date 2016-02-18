@@ -124,8 +124,11 @@ h3 {
 
 .extra-info {
   text-align: center;
-  h3 {
-    margin-bottom: 30px;
+  .extra-info-part-container {
+      opacity: 0;
+      h3 {
+        margin-bottom: 30px;
+      }
   }
 }
 
@@ -169,7 +172,7 @@ h3 {
   }
 }
 
-.about {
+.about-container {
   margin-top: 30px;
   background-color: #FFF;
   h4 {
@@ -191,7 +194,15 @@ h3 {
 
 .about-content {
   position: relative;
-  opacity: 0;
+  // opacity: 0;
+  .about-left {
+      opacity: 0;
+      left: -200px;
+  }
+  .about-right {
+      opacity: 0;
+      right: -200px;
+  }
 }
 
 .skills-list-item {

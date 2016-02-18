@@ -148,11 +148,15 @@ h3 {
   text-align: center;
 }
 /* line 127, ../sass/style.scss */
-.extra-info h3 {
+.extra-info .extra-info-part-container {
+  opacity: 0;
+}
+/* line 129, ../sass/style.scss */
+.extra-info .extra-info-part-container h3 {
   margin-bottom: 30px;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .portfolio-scroll-button-container {
   position: absolute;
   bottom: 8%;
@@ -161,7 +165,7 @@ h3 {
   right: 0;
   text-align: center;
 }
-/* line 139, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .portfolio-scroll-button-container img {
   height: 130px;
   -webkit-transition: all 0.3s;
@@ -171,13 +175,13 @@ h3 {
   transition: all 0.3s;
 }
 @media (max-width: 414px) {
-  /* line 139, ../sass/style.scss */
+  /* line 142, ../sass/style.scss */
   .portfolio-scroll-button-container img {
     height: 90px;
     bottom: 5%;
   }
 }
-/* line 146, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .portfolio-scroll-button-container img:hover {
   transform: scale(1.2);
   -webkit-transition: all 0.3s;
@@ -188,56 +192,65 @@ h3 {
   cursor: pointer;
 }
 
-/* line 155, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .no-gutter [class*="-4"] {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 161, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .project-image {
   opacity: 0;
   position: relative;
   top: -50px;
 }
-/* line 165, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .project-image img {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-/* line 172, ../sass/style.scss */
-.about {
+/* line 175, ../sass/style.scss */
+.about-container {
   margin-top: 30px;
   background-color: #FFF;
 }
-/* line 175, ../sass/style.scss */
-.about h4 {
+/* line 178, ../sass/style.scss */
+.about-container h4 {
   text-align: center;
   font-size: 2em;
   margin: 20px 0;
 }
-/* line 180, ../sass/style.scss */
-.about img {
+/* line 183, ../sass/style.scss */
+.about-container img {
   display: block;
   margin: 0 auto 50px auto;
   height: 300px;
   border-radius: 50%;
   border: 3px solid black;
 }
-/* line 187, ../sass/style.scss */
-.about p {
+/* line 190, ../sass/style.scss */
+.about-container p {
   margin: 0 auto 50px auto;
 }
 
-/* line 192, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 .about-content {
   position: relative;
+}
+/* line 198, ../sass/style.scss */
+.about-content .about-left {
   opacity: 0;
+  left: -200px;
+}
+/* line 202, ../sass/style.scss */
+.about-content .about-right {
+  opacity: 0;
+  right: -200px;
 }
 
-/* line 197, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .skills-list-item {
   text-align: center;
   margin: 3px 0;
@@ -246,13 +259,13 @@ h3 {
   background-color: #f5f5f5;
 }
 
-/* line 206, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .project-container img {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 212, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .typed-cursor {
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
@@ -261,51 +274,51 @@ h3 {
 }
 
 @keyframes blink {
-  /* line 219, ../sass/style.scss */
+  /* line 230, ../sass/style.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 220, ../sass/style.scss */
+  /* line 231, ../sass/style.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 221, ../sass/style.scss */
+  /* line 232, ../sass/style.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes blink {
-  /* line 224, ../sass/style.scss */
+  /* line 235, ../sass/style.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 225, ../sass/style.scss */
+  /* line 236, ../sass/style.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 226, ../sass/style.scss */
+  /* line 237, ../sass/style.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes blink {
-  /* line 229, ../sass/style.scss */
+  /* line 240, ../sass/style.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 230, ../sass/style.scss */
+  /* line 241, ../sass/style.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 231, ../sass/style.scss */
+  /* line 242, ../sass/style.scss */
   100% {
     opacity: 1;
   }
