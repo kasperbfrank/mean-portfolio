@@ -142,6 +142,7 @@ h3 {
     font-weight: lighter;
     @include respond-to(414px) {
       font-size: 2em;
+      font-weight: 200;
     };
     @include respond-to(375px) {
       font-size: 1.7em;

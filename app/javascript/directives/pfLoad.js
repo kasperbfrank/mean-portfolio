@@ -20,6 +20,7 @@
             function handleLoadComplete() {
                 scope.safeApply(function() {
                     el.addClass('animated fadeOut');
+                    $window.scrollTo(0, 0);
                 });
             }
         }

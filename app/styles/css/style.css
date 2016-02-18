@@ -164,6 +164,7 @@ h3 {
   /* line 139, ../sass/style.scss */
   .portfolio-guide h3 {
     font-size: 2em;
+    font-weight: 200;
   }
 }
 @media (max-width: 375px) {
@@ -173,20 +174,20 @@ h3 {
   }
 }
 
-/* line 152, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .extra-info {
   text-align: center;
 }
-/* line 154, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .extra-info .extra-info-part-container {
   opacity: 0;
 }
-/* line 156, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .extra-info .extra-info-part-container h3 {
   margin-bottom: 30px;
 }
 
-/* line 162, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .portfolio-scroll-button-container {
   position: absolute;
   bottom: 8%;
@@ -195,7 +196,7 @@ h3 {
   right: 0;
   text-align: center;
 }
-/* line 169, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .portfolio-scroll-button-container img {
   height: 130px;
   -webkit-transition: all 0.3s;
@@ -205,13 +206,13 @@ h3 {
   transition: all 0.3s;
 }
 @media (max-width: 414px) {
-  /* line 169, ../sass/style.scss */
+  /* line 170, ../sass/style.scss */
   .portfolio-scroll-button-container img {
     height: 90px;
     bottom: 5%;
   }
 }
-/* line 176, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .portfolio-scroll-button-container img:hover {
   transform: scale(1.2);
   -webkit-transition: all 0.3s;
@@ -222,37 +223,37 @@ h3 {
   cursor: pointer;
 }
 
-/* line 185, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .no-gutter [class*="-4"] {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 191, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .project-image {
   opacity: 0;
   position: relative;
   top: -50px;
 }
-/* line 195, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .project-image img {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-/* line 202, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .about-container {
   margin-top: 30px;
   background-color: #FFF;
 }
-/* line 205, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .about-container h4 {
   text-align: center;
   font-size: 2em;
   margin: 20px 0;
 }
-/* line 210, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .about-container #kasper-picture {
   display: block;
   margin: 0 auto 50px auto;
@@ -260,27 +261,27 @@ h3 {
   border-radius: 50%;
   border: 3px solid black;
 }
-/* line 217, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .about-container p {
   margin: 0 auto 50px auto;
 }
 
-/* line 222, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .about-content {
   position: relative;
 }
-/* line 225, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .about-content .about-left {
   opacity: 0;
   left: -200px;
 }
-/* line 229, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .about-content .about-right {
   opacity: 0;
   right: -200px;
 }
 
-/* line 235, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 .skills-list-item {
   text-align: center;
   margin: 3px 0;
@@ -289,13 +290,13 @@ h3 {
   background-color: #f5f5f5;
 }
 
-/* line 244, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .project-container img {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 250, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .typed-cursor {
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
@@ -304,63 +305,63 @@ h3 {
 }
 
 @keyframes blink {
-  /* line 257, ../sass/style.scss */
+  /* line 258, ../sass/style.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 258, ../sass/style.scss */
+  /* line 259, ../sass/style.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 259, ../sass/style.scss */
+  /* line 260, ../sass/style.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes blink {
-  /* line 262, ../sass/style.scss */
+  /* line 263, ../sass/style.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 263, ../sass/style.scss */
+  /* line 264, ../sass/style.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 264, ../sass/style.scss */
+  /* line 265, ../sass/style.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes blink {
-  /* line 267, ../sass/style.scss */
+  /* line 268, ../sass/style.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 268, ../sass/style.scss */
+  /* line 269, ../sass/style.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 269, ../sass/style.scss */
+  /* line 270, ../sass/style.scss */
   100% {
     opacity: 1;
   }
 }
 
-/* line 274, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 #loading-bar .bar {
   background-color: #FFFF00;
   height: 5px;
 }
 
-/* line 278, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 #loading-bar-spinner .spinner-icon {
   border-top-color: #FFFF00;
   border-left-color: #FFFF00;
