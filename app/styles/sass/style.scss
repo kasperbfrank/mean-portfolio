@@ -19,7 +19,7 @@ $header-color: lighten(#000000, 40%);
 // start
 
 html, body {
-    width: 100%;
+    width: 100vw;
 }
 
 body {
@@ -226,10 +226,16 @@ h3 {
   .about-left {
       opacity: 0;
       left: -200px;
+      @include respond-to(414px) {
+          left: 0;
+      };
   }
   .about-right {
       opacity: 0;
       right: -200px;
+      @include respond-to(414px) {
+          right: 0;
+      };
   }
 }
 
