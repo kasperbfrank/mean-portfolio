@@ -253,7 +253,7 @@ h3 {
   margin: 20px 0;
 }
 /* line 210, ../sass/style.scss */
-.about-container img {
+.about-container #kasper-picture {
   display: block;
   margin: 0 auto 50px auto;
   height: 300px;
