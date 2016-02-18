@@ -81,7 +81,7 @@ h3 {
 .description-container {
   margin-top: 5%;
   h1 {
-    font-size: 4.5em;
+    font-size: 5em;
     color: #FFF;
     @include respond-to(1280px) {
       font-size: 4em;
@@ -207,4 +207,26 @@ h3 {
         width: 100%;
         overflow: hidden;
     }
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

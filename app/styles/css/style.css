@@ -83,7 +83,7 @@ h3 {
 }
 /* line 83, ../sass/style.scss */
 .description-container h1 {
-  font-size: 4.5em;
+  font-size: 5em;
   color: #FFF;
 }
 @media (max-width: 1280px) {
@@ -250,4 +250,63 @@ h3 {
 .project-container img {
   width: 100%;
   overflow: hidden;
+}
+
+/* line 212, ../sass/style.scss */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  /* line 219, ../sass/style.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 220, ../sass/style.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 221, ../sass/style.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  /* line 224, ../sass/style.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 225, ../sass/style.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 226, ../sass/style.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  /* line 229, ../sass/style.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 230, ../sass/style.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 231, ../sass/style.scss */
+  100% {
+    opacity: 1;
+  }
 }
