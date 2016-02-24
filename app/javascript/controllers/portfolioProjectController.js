@@ -27,9 +27,10 @@
         }
       });
 
-      projectFactory.getFirst().success(function(data) {
-         vm.testVar = data;
-      });
+    //   Test of rails API...
+    //   projectFactory.getFirst().success(function(data) {
+    //      vm.testVar = data;
+    //   });
     }
   }
 })();
