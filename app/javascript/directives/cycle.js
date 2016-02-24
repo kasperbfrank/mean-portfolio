@@ -18,7 +18,9 @@
             $timeout(function(){
                $(el).cycle({
                    fx: 'fade',
-                   timeout: 5000
+                   swipe: true,
+                   pauseOnHover: true,
+                   timeout: 8000
                });
            }, 0);
 	    }
