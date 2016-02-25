@@ -2,9 +2,14 @@
 <h2>{{pfProjectCtrl.currentProject.name}}</h2>
 <div class="container project-container">
     <!-- <a href="/#/">back</a> -->
-    <div class="slideshow" cycle>
-        <img ng-src="{{imageUrl}}" alt="project image" ng-repeat="imageUrl in pfProjectCtrl.currentProject.images" />
+    <div class="slideshow">
+        <div cycle>
+            <img ng-src="{{imageUrl}}" alt="project image" ng-repeat="imageUrl in pfProjectCtrl.currentProject.images" />
+        </div>
+        <img id="prev" src="img/ui/prev.png" alt="" />
+        <img id="next" src="img/ui/next.png" alt="" />
     </div>
+
     <div class="row">
         <div ng-include="'partials/portfolio/project/pf-project-brief.html'"></div>
         <div ng-include="'partials/portfolio/project/pf-project-concept.html'"></div>

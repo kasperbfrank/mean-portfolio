@@ -27,7 +27,7 @@ $header-color: lighten(#000000, 40%);
 // start
 
 html, body {
-    width: 100vw;
+    width: 100%;
 }
 
 body {
@@ -240,15 +240,15 @@ h3 {
   // opacity: 0;
   .about-left {
       opacity: 0;
-      left: -150px;
-      @include respond-to(414px) {
+      left: -50px;
+      @include respond-to(1280px) {
           left: 0;
       };
   }
   .about-right {
       opacity: 0;
-      right: -150px;
-      @include respond-to(414px) {
+      right: -50px;
+      @include respond-to(1280px) {
           right: 0;
       };
   }
@@ -269,6 +269,44 @@ h3 {
         overflow: hidden;
     }
 }
+
+.slideshow {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#prev {
+    height: 10%;
+    width: auto;
+    position: absolute;
+    top: 45%;
+    bottom: 45%;
+    left: -20px;
+    z-index: 100;
+    opacity: 0;
+    margin: auto 15px;
+    @include respond-to(414px) {
+        display: none;
+    };
+}
+#next {
+    height: 10%;
+    width: auto;
+    position: absolute;
+    top: 45%;
+    bottom: 45%;
+    right: -20px;
+    z-index: 100;
+    opacity: 0;
+    margin: auto 15px;
+    @include respond-to(414px) {
+        display: none;
+    };
+}
+
+// Front page typing animation
 
 .typed-cursor{
     opacity: 1;

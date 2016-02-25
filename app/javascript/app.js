@@ -6,7 +6,7 @@
     .module('Portfolio', [
       'ngRoute',
       'angular-loading-bar',
-      'ngAnimate'
+      'ngAnimate',
     ])
     .config(_configApply);
 
