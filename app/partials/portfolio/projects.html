@@ -1,8 +1,15 @@
 <div class="container no-gutter">
-    <a ng-repeat="project in pfIndexCtrl.projects" ng-href="#/portfolio/{{project.name}}">
-      <div class="col-md-3 col-sm-6">
-          <div class=" project-image">
+    <a ng-repeat="project in pfIndexCtrl.projects">
+      <div class="col-md-4 col-sm-6">
+          <div class="project-image">
+              <div class="overlay" />
               <img ng-src="img/temp/1.png">
+              <h3>{{project.name}}</h3>
+              <ul class="list-unstyled">
+                  <li ng-repeat="tag in project.tags">{{tag}}</li>
+              </ul>
+              <!-- <a class="view-project-button" ng-href="#/portfolio/{{project.name}}">View</a> -->
+              <button ng-click="goToProject(project.name)">View</button>
           </div>
       </div>
     </a>

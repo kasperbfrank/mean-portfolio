@@ -29,7 +29,7 @@
                             if ((i % 2) && angular.element($window).width() > 991) {
                                 offset = '0px';
                             }
-                            jQuery(this).css({ top: offset }).delay(i * 200).animate({
+                            jQuery(this).delay(i * 200).animate({
                                 opacity: 1
                             }, 400);
                         });
