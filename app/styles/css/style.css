@@ -310,8 +310,9 @@ h3 {
 .project-image ul li {
   display: inline-block;
   margin: 5px;
+  color: #38c5ff;
 }
-/* line 282, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 .project-image img {
   -webkit-filter: grayscale(0.7);
   -moz-filter: grayscale(0.7);
@@ -323,7 +324,7 @@ h3 {
   transition: all 0.2s ease;
   z-index: 0;
 }
-/* line 289, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .project-image button {
   position: absolute;
   width: 100px;
