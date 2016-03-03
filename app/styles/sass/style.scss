@@ -377,7 +377,7 @@ h3 {
     bottom: 45%;
     left: -20px;
     z-index: 100;
-    opacity: 0;
+    opacity: 1;
     margin: auto 15px;
     @include respond-to(414px) {
         display: none;
@@ -391,7 +391,7 @@ h3 {
     bottom: 45%;
     right: -20px;
     z-index: 100;
-    opacity: 0;
+    opacity: 1;
     margin: auto 15px;
     @include respond-to(414px) {
         display: none;

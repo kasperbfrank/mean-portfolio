@@ -454,7 +454,7 @@ h3 {
   bottom: 45%;
   left: -20px;
   z-index: 100;
-  opacity: 0;
+  opacity: 1;
   margin: auto 15px;
 }
 @media (max-width: 414px) {
@@ -473,7 +473,7 @@ h3 {
   bottom: 45%;
   right: -20px;
   z-index: 100;
-  opacity: 0;
+  opacity: 1;
   margin: auto 15px;
 }
 @media (max-width: 414px) {

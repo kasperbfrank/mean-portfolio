@@ -3,13 +3,11 @@
 <div class="container project-container">
     <a href="/#/">back</a>
     <div class="slideshow">
-        <!-- <div cycle>
-            <img ng-src="{{imageUrl}}" alt="project image" ng-repeat="imageUrl in pfProjectCtrl.currentProject.images" />
-        </div>
-        <img id="prev" src="img/ui/prev.png" alt="" />
-        <img id="next" src="img/ui/next.png" alt="" /> -->
-        {{pfProjectCtrl.currentProject.images.length}}
-        <slick ng-if="pfProjectCtrl.currentProject.images.length">
+        <!-- <img class="slick-prev" src="img/ui/prev.png" alt="" />
+        <img class="slick-next" src="img/ui/next.png" alt="" /> -->
+        <!-- <button type="button" class="slick-prev">Previous</button>
+        <button type="button" class="slick-next">Next</button> -->
+        <slick dots=true autoplay=true autoplay-speed=4000 ng-if="pfProjectCtrl.currentProject.images.length">
         <!-- <slick init-onload=true data="pfProjectCtrl.currentProject.images"> -->
             <div ng-repeat="image in pfProjectCtrl.currentProject.images">
                 <img ng-src="{{image}}" alt="" />
