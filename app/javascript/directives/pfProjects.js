@@ -18,7 +18,6 @@
         function linkFunc(scope, el, attr) {
             scope.goToProject = function(projectName) {
                 $location.path('/portfolio/' + projectName);
-                // console.log('click');
             }
         }
     }
