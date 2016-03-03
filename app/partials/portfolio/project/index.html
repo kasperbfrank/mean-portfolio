@@ -3,24 +3,29 @@
 <div class="container project-container">
     <a href="/#/">back</a>
     <div class="slideshow">
-        <!-- <img class="slick-prev" src="img/ui/prev.png" alt="" />
-        <img class="slick-next" src="img/ui/next.png" alt="" /> -->
-        <!-- <button type="button" class="slick-prev">Previous</button>
-        <button type="button" class="slick-next">Next</button> -->
-        <slick dots=true autoplay=true autoplay-speed=4000 ng-if="pfProjectCtrl.currentProject.images.length">
-        <!-- <slick init-onload=true data="pfProjectCtrl.currentProject.images"> -->
+        <slick fade=true speed=1000 dots=true autoplay=true autoplay-speed=4000 ng-if="pfProjectCtrl.currentProject.images.length">
             <div ng-repeat="image in pfProjectCtrl.currentProject.images">
-                <img ng-src="{{image}}" alt="" />
+                <img ng-src="{{image}}" alt="project image" />
             </div>
         </slick>
     </div>
 
+
     <div class="row">
-        <div ng-include="'partials/portfolio/project/pf-project-brief.html'"></div>
         <div ng-include="'partials/portfolio/project/pf-project-concept.html'"></div>
-    </div>
-    <div class="row">
         <div ng-include="'partials/portfolio/project/pf-project-prototype.html'"></div>
-        <div ng-include="'partials/portfolio/project/pf-project-skills.html'"></div>
+        <div class="col-lg-4 col-md-12">
+            <ul class="list-unstyled tags">
+                <li class="skills-list-item">Programming</li>
+                <li class="skills-list-item">Interaction design</li>
+                <li class="skills-list-item">Physical design</li>
+                <li class="skills-list-item">Prototyping</li>
+                <li class="skills-list-item">Agile development</li>
+                <li class="skills-list-item">Participartory design</li>
+                <li class="skills-list-item">Project management</li>
+                <li class="skills-list-item">Innovation processes</li>
+                <li class="skills-list-item">User experience design</li>
+            </ul>
+        </div>
     </div>
 </div>

@@ -234,7 +234,7 @@ h3 {
         }
         ul {
             opacity: 0;
-            top: 0;
+            top: 10%;
         }
         img {
             @include filter(grayscale(0));
@@ -273,7 +273,7 @@ h3 {
         z-index: 2;
         text-align: justify;
         opacity: 1;
-        @include transition(all .2s);
+        @include transition(all .1s);
         li {
             display: inline-block;
             width: 50%;
@@ -345,20 +345,25 @@ h3 {
   .statement {
       text-align: justify;
   }
-  .skills-list-item {
-    margin: 3px 1px;
-    padding: 10px 10px;
-    background-color: $grey;
-    display: inline-block;
-  }
 }
 
-
+.skills-list-item {
+  margin: 3px 1px;
+  padding: 10px 10px;
+  background-color: $grey;
+  display: inline-block;
+}
 
 .project-container {
     img {
         width: 100%;
         overflow: hidden;
+    }
+    .tags {
+        margin-top: 20px;
+        @include respond-to(1200px, 'min-width') {
+            margin-top: 72px;
+        };
     }
 }
 
@@ -369,34 +374,34 @@ h3 {
     overflow: hidden;
 }
 
-#prev {
-    height: 10%;
-    width: auto;
-    position: absolute;
-    top: 45%;
-    bottom: 45%;
-    left: -20px;
-    z-index: 100;
-    opacity: 1;
-    margin: auto 15px;
-    @include respond-to(414px) {
-        display: none;
-    };
-}
-#next {
-    height: 10%;
-    width: auto;
-    position: absolute;
-    top: 45%;
-    bottom: 45%;
-    right: -20px;
-    z-index: 100;
-    opacity: 1;
-    margin: auto 15px;
-    @include respond-to(414px) {
-        display: none;
-    };
-}
+// #prev {
+//     height: 10%;
+//     width: auto;
+//     position: absolute;
+//     top: 45%;
+//     bottom: 45%;
+//     left: -20px;
+//     z-index: 100;
+//     opacity: 1;
+//     margin: auto 15px;
+//     @include respond-to(414px) {
+//         display: none;
+//     };
+// }
+// #next {
+//     height: 10%;
+//     width: auto;
+//     position: absolute;
+//     top: 45%;
+//     bottom: 45%;
+//     right: -20px;
+//     z-index: 100;
+//     opacity: 1;
+//     margin: auto 15px;
+//     @include respond-to(414px) {
+//         display: none;
+//     };
+// }
 
 // Front page typing animation
 

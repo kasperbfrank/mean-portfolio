@@ -24,11 +24,6 @@
                     var img = jQuery('.project-image');
                     if (_isScrolledIntoView(img.first())) {
                         img.each(function(i) {
-                            var offset = '50px';
-                            console.log(jQuery(window).width());
-                            if ((i % 2) && angular.element($window).width() > 991) {
-                                offset = '0px';
-                            }
                             jQuery(this).delay(i * 200).animate({
                                 opacity: 1
                             }, 400);
