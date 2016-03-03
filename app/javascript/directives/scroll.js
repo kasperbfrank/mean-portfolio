@@ -48,7 +48,7 @@
                     function animateExtraInfo() {
                         var extraInfoPartContainer = jQuery('.extra-info-part-container');
                         extraInfoPartContainer.each(function(i) {
-                            jQuery(this).delay(i * 500).animate({
+                            jQuery(this).animate({
                                 opacity: 1
                             }, 500);
                         });

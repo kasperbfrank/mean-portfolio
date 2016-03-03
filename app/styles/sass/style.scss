@@ -198,6 +198,11 @@ h3 {
 
 .projects-container {
     padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    #projects {
+        align-self: center;
+    }
 }
 
 .projects-container:after,
@@ -207,22 +212,17 @@ h3 {
     clear: both;
 }
 
-// .no-gutter {
-//   [class*="-4"] {
-//     padding-right: 10px;
-//     padding-left: 10px;
-//   }
-// }
-
 .project-image {
     // background: $grey;
+
     margin: 15px 0;
     width: 100%;
-    max-width: 350px;
+    // max-width: 350px;
     height: 250px;
     opacity: 0;
     position: relative;
     overflow: hidden;
+    -webkit-transform: translateZ(0);
     &:hover {
         cursor: pointer;
         .overlay {
@@ -250,7 +250,7 @@ h3 {
         height: 100%;
         top: -40%;
         background: $grey;
-        transition: all 0.2s ease;
+        @include transition(all .2s ease);
         z-index: 1;
     }
     h3 {
@@ -261,7 +261,7 @@ h3 {
         right: 0;
         margin: 0;
         padding: 0;
-        transition: all 0.2s ease;
+        @include transition(all .2s ease);
         z-index: 2;
     }
     ul {
@@ -273,10 +273,11 @@ h3 {
         z-index: 2;
         text-align: justify;
         opacity: 1;
-        transition: all 0.2s;
+        @include transition(all .2s);
         li {
             display: inline-block;
-            margin: 5px;
+            width: 50%;
+            margin-top: 5px;
             color: $main-color;
         }
     }
@@ -284,7 +285,7 @@ h3 {
         @include filter(grayscale(0.7));
         width: 100%;
         height: 100%;
-        transition: all 0.2s ease;
+        @include transition(all .2s ease);
         z-index: 0;
     }
     button {
@@ -301,7 +302,7 @@ h3 {
         right: 0;
         margin: 0 auto;
         transform: scale(0.25);
-        transition: all 0.2s ease;
+        @include transition(all .2s ease);
     }
 }
 
@@ -327,7 +328,6 @@ h3 {
 
 .about-content {
   position: relative;
-  // opacity: 0;
   .about-left {
       opacity: 0;
       left: -50px;
@@ -346,7 +346,6 @@ h3 {
       text-align: justify;
   }
   .skills-list-item {
-    // text-align: center;
     margin: 3px 1px;
     padding: 10px 10px;
     background-color: $grey;
