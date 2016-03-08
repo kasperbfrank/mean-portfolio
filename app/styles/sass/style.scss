@@ -239,10 +239,10 @@ h3 {
         img {
             @include filter(grayscale(0));
         }
-        button {
-            transform: scale(1);
-            opacity: 1;
-        }
+        // button {
+        //     transform: scale(1);
+        //     opacity: 1;
+        // }
     }
     .overlay {
         position: absolute;
@@ -288,22 +288,22 @@ h3 {
         @include transition(all .2s ease);
         z-index: 0;
     }
-    button {
-        position: absolute;
-        width: 100px;
-        height: 35px;
-    	padding: 2px 20px;
-        border: 3px solid #fff;
-    	background: transparent;
-    	color: #fff;
-    	opacity: 0;
-        top: 60%;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        transform: scale(0.25);
-        @include transition(all .2s ease);
-    }
+    // button {
+    //     position: absolute;
+    //     width: 100px;
+    //     height: 35px;
+    // 	padding: 2px 20px;
+    //     border: 3px solid #fff;
+    // 	background: transparent;
+    // 	color: #fff;
+    // 	opacity: 0;
+    //     top: 60%;
+    //     left: 0;
+    //     right: 0;
+    //     margin: 0 auto;
+    //     transform: scale(0.25);
+    //     @include transition(all .2s ease);
+    // }
 }
 
 .about-container {
@@ -373,35 +373,6 @@ h3 {
     position: relative;
     overflow: hidden;
 }
-
-// #prev {
-//     height: 10%;
-//     width: auto;
-//     position: absolute;
-//     top: 45%;
-//     bottom: 45%;
-//     left: -20px;
-//     z-index: 100;
-//     opacity: 1;
-//     margin: auto 15px;
-//     @include respond-to(414px) {
-//         display: none;
-//     };
-// }
-// #next {
-//     height: 10%;
-//     width: auto;
-//     position: absolute;
-//     top: 45%;
-//     bottom: 45%;
-//     right: -20px;
-//     z-index: 100;
-//     opacity: 1;
-//     margin: auto 15px;
-//     @include respond-to(414px) {
-//         display: none;
-//     };
-// }
 
 // Front page typing animation
 
