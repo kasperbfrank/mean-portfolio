@@ -227,12 +227,12 @@ h3 {
             top: 0%;
         }
         h3 {
-            top: 30%;
+            top: 10%;
             opacity: 1;
         }
         ul {
             opacity: 1;
-            top: 50%;
+            top: 30%;
         }
         img {
             opacity: 0;
@@ -242,7 +242,7 @@ h3 {
         font-size: 2em;
         color: black;
         position: absolute;
-        top: 0%;
+        top: -20%;
         left: 0;
         right: 0;
         margin: 0;
@@ -253,20 +253,19 @@ h3 {
     }
     ul {
         position: absolute;
-        padding: 0 100px;
+        padding: 0 10px;
         left: 0;
         right: 0;
-        top: 80%;
+        top: 50%;
         z-index: 2;
         text-align: justify;
         opacity: 0;
         @include transition(all .1s ease);
         li {
             display: inline-block;
-            width: 50%;
-            margin-top: 5px;
-            // color: black;
+            margin: 5px 10px;
             color: $main-color;
+            font-size: 0.9em;
         }
     }
     img {
@@ -356,7 +355,6 @@ h3 {
           };
       }
   }
-
 }
 
 .skills-list-item {
