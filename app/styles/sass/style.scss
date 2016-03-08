@@ -331,6 +331,9 @@ h3 {
       li {
           display: inline-block;
           margin: 40px 70px 0;
+          @include respond-to(420px) {
+              margin: 40px 30px;
+          };
       }
       .file {
           opacity: 0.7;
@@ -343,12 +346,14 @@ h3 {
               margin-top: 5px;
               color: black;
           }
-          &:hover {
-              border-bottom: 3px solid $main-color;
-              padding-bottom: 8px;
-              opacity: 1;
-              transform: translateY(-8px);
-          }
+          @include respond-to(1025px, 'min-width') {
+              &:hover {
+                  border-bottom: 3px solid $main-color;
+                  padding-bottom: 8px;
+                  opacity: 1;
+                  transform: translateY(-8px);
+              }
+          };
       }
   }
 

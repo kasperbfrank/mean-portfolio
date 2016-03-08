@@ -394,7 +394,13 @@ h3 {
   display: inline-block;
   margin: 40px 70px 0;
 }
-/* line 335, ../sass/style.scss */
+@media (max-width: 420px) {
+  /* line 331, ../sass/style.scss */
+  .about-content .files li {
+    margin: 40px 30px;
+  }
+}
+/* line 338, ../sass/style.scss */
 .about-content .files .file {
   opacity: 0.7;
   text-align: center;
@@ -404,24 +410,26 @@ h3 {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 339, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 .about-content .files .file img {
   height: 100px;
 }
-/* line 342, ../sass/style.scss */
+/* line 345, ../sass/style.scss */
 .about-content .files .file figcaption {
   margin-top: 5px;
   color: black;
 }
-/* line 346, ../sass/style.scss */
-.about-content .files .file:hover {
-  border-bottom: 3px solid #38c5ff;
-  padding-bottom: 8px;
-  opacity: 1;
-  transform: translateY(-8px);
+@media (min-width: 1025px) {
+  /* line 350, ../sass/style.scss */
+  .about-content .files .file:hover {
+    border-bottom: 3px solid #38c5ff;
+    padding-bottom: 8px;
+    opacity: 1;
+    transform: translateY(-8px);
+  }
 }
 
-/* line 357, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 .skills-list-item {
   margin: 3px 1px;
   padding: 10px 10px;
@@ -429,23 +437,23 @@ h3 {
   display: inline-block;
 }
 
-/* line 365, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 .project-container img {
   width: 100%;
   overflow: hidden;
 }
-/* line 369, ../sass/style.scss */
+/* line 374, ../sass/style.scss */
 .project-container .tags {
   margin-top: 20px;
 }
 @media (min-width: 1200px) {
-  /* line 369, ../sass/style.scss */
+  /* line 374, ../sass/style.scss */
   .project-container .tags {
     margin-top: 72px;
   }
 }
 
-/* line 377, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 .slideshow {
   width: 100%;
   height: auto;
@@ -453,7 +461,7 @@ h3 {
   overflow: hidden;
 }
 
-/* line 386, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 .typed-cursor {
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
@@ -462,23 +470,6 @@ h3 {
 }
 
 @keyframes blink {
-  /* line 393, ../sass/style.scss */
-  0% {
-    opacity: 1;
-  }
-
-  /* line 394, ../sass/style.scss */
-  50% {
-    opacity: 0;
-  }
-
-  /* line 395, ../sass/style.scss */
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes blink {
   /* line 398, ../sass/style.scss */
   0% {
     opacity: 1;
@@ -495,7 +486,7 @@ h3 {
   }
 }
 
-@-moz-keyframes blink {
+@-webkit-keyframes blink {
   /* line 403, ../sass/style.scss */
   0% {
     opacity: 1;
@@ -512,13 +503,30 @@ h3 {
   }
 }
 
-/* line 410, ../sass/style.scss */
+@-moz-keyframes blink {
+  /* line 408, ../sass/style.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 409, ../sass/style.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 410, ../sass/style.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 415, ../sass/style.scss */
 #loading-bar .bar {
   background-color: #FFFF00;
   height: 5px;
 }
 
-/* line 414, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 #loading-bar-spinner .spinner-icon {
   border-top-color: #FFFF00;
   border-left-color: #FFFF00;
