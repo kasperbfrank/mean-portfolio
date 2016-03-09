@@ -2,7 +2,7 @@
     <a ng-repeat="project in pfIndexCtrl.projects" ng-href="#/portfolio/{{project.name}}">
       <div class="col-md-4 col-sm-6">
           <div class="project-image">
-              <img ng-src="img/temp/1.png">
+              <img ng-src="{{project.navImage}}">
               <h3>{{project.name}}</h3>
               <ul class="list-unstyled tags-list">
                   <li ng-repeat="tag in project.tags">{{tag}}</li>
