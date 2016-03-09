@@ -431,7 +431,7 @@ h3 {
 
 /* line 360, ../sass/style.scss */
 .skills-list-item {
-  margin: 3px 1px;
+  margin: 3px 3px;
   padding: 10px 10px;
   background-color: whitesmoke;
   display: inline-block;
