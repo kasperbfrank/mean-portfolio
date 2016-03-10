@@ -226,10 +226,12 @@ h3 {
         h3 {
             top: 10%;
             opacity: 1;
+            @include transition(all .1s ease .1s);
         }
         ul {
             opacity: 1;
             top: 30%;
+            @include transition(all .1s ease .1s);
         }
         img {
             opacity: 0;
