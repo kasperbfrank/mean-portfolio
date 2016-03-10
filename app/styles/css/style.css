@@ -435,22 +435,36 @@ h3 {
 }
 
 /* line 365, ../sass/style.scss */
+.project-container .video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+/* line 369, ../sass/style.scss */
+.project-container .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 377, ../sass/style.scss */
 .project-container img {
   width: 100%;
   overflow: hidden;
 }
-/* line 369, ../sass/style.scss */
+/* line 381, ../sass/style.scss */
 .project-container .tags {
   margin-top: 20px;
 }
 @media (min-width: 1200px) {
-  /* line 369, ../sass/style.scss */
+  /* line 381, ../sass/style.scss */
   .project-container .tags {
     margin-top: 72px;
   }
 }
 
-/* line 377, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 .slideshow {
   width: 100%;
   height: auto;
@@ -458,7 +472,7 @@ h3 {
   overflow: hidden;
 }
 
-/* line 386, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 .typed-cursor {
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
@@ -467,63 +481,63 @@ h3 {
 }
 
 @keyframes blink {
-  /* line 393, ../sass/style.scss */
+  /* line 405, ../sass/style.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 394, ../sass/style.scss */
+  /* line 406, ../sass/style.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 395, ../sass/style.scss */
+  /* line 407, ../sass/style.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes blink {
-  /* line 398, ../sass/style.scss */
+  /* line 410, ../sass/style.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 399, ../sass/style.scss */
+  /* line 411, ../sass/style.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 400, ../sass/style.scss */
+  /* line 412, ../sass/style.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes blink {
-  /* line 403, ../sass/style.scss */
+  /* line 415, ../sass/style.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 404, ../sass/style.scss */
+  /* line 416, ../sass/style.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 405, ../sass/style.scss */
+  /* line 417, ../sass/style.scss */
   100% {
     opacity: 1;
   }
 }
 
-/* line 410, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 #loading-bar .bar {
   background-color: #FFFF00;
   height: 5px;
 }
 
-/* line 414, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 #loading-bar-spinner .spinner-icon {
   border-top-color: #FFFF00;
   border-left-color: #FFFF00;

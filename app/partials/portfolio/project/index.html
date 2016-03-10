@@ -1,14 +1,21 @@
 <div id="load-overlay-white" pf-load></div>
 <h2>{{pfProjectCtrl.currentProject.name}}</h2>
 <div class="container project-container">
-    <!-- <a href="/#/">back</a> -->
-    <div class="slideshow">
+    <ng-switch on="pfProjectCtrl.currentProject.image || '_undefined_'">
+        <div ng-switch-when="_undefined_">
+            <anguvideo class="video" ng-model="pfProjectCtrl.currentProject.video"></anguvideo>
+        </div>
+        <div ng-switch-default>
+            <img ng-src="{{pfProjectCtrl.currentProject.image}}" alt="project image" />
+        </div>
+    </ng-switch>
+    <!-- <div class="slideshow">
         <slick fade=true speed=1000 dots=true autoplay=true autoplay-speed=4000 ng-if="pfProjectCtrl.currentProject.images.length">
             <div ng-repeat="image in pfProjectCtrl.currentProject.images">
                 <img ng-src="{{image}}" alt="project image" />
             </div>
         </slick>
-    </div>
+    </div> -->
     <div ng-include="'partials/portfolio/project/pf-project-skills.html'"></div>
     <div class="row">
         <div ng-include="'partials/portfolio/project/pf-project-concept.html'"></div>
