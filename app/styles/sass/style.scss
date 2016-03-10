@@ -217,6 +217,7 @@ h3 {
     width: 100%;
     opacity: 0;
     position: relative;
+    overflow: hidden;
     -webkit-transform: translateZ(0);
     &:hover {
         cursor: pointer;
