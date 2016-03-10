@@ -5,7 +5,7 @@
         .module('Portfolio')
         .controller('PortfolioIndexController', PortfolioIndexController);
 
-    PortfolioIndexController.$inject = ['$scope','$window' , 'projectFactory'];
+    PortfolioIndexController.$inject = ['$scope','$window' ,'projectFactory'];
 
     /* @ngInject */
     function PortfolioIndexController($scope, $window, projectFactory) {
