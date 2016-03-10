@@ -264,6 +264,12 @@ h3 {
             margin: 5px 10px;
             color: $main-color;
             font-size: 0.9em;
+            @include respond-to(1200px) {
+                font-size: 0.8em;
+            };
+            @include respond-to(992px) {
+                font-size: 0.9em;
+            };
         }
     }
     img {
