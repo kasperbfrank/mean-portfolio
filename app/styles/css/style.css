@@ -322,7 +322,7 @@ h3 {
 @media (max-width: 1200px) {
   /* line 264, ../sass/style.scss */
   .project-image ul li {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 }
 @media (max-width: 992px) {
