@@ -26,10 +26,10 @@
     {"id": 4, "name": "Fez Controller", "navImage": "img/projects/fez-controller/nav.png", "image": "",
         "video": "https://youtu.be/iI_SSWB3YHs",
         "description": {
-            "project": "The Fez Controller is a prototype of a game controller made for the indie game Fez made in the university course 3D Prototyping. The project involved both physical design and interaction design. By working with a focus group and initial ideas manifested in low-fidelity prototypes specific elements of controlling the game that could be improved were identified. The project culminated in a final 3D printed high-fidelity prototype which can be used for playing Fez. The focus of the prototype was to support the visual aesthetics and style of the game through the controller. The design of the controller was centered around a key aspect that makes the game special, namely rotating the 2D game world in 3D space. The design of the controller was also greatly inspired by old nintendo controllers. The controller was found to enhance immersion for the player due to a more direct mapping of the controls and engaging interaction.",
+            "project": "The Fez Controller is a prototype of a game controller made for the indie game Fez. The project involved both physical design and interaction design. By working with a focus group and initial ideas manifested in low-fidelity prototypes specific elements of controlling the game that could be improved were identified. The project culminated in a final 3D printed high-fidelity prototype which can be used for playing Fez. The focus of the prototype was to support the visual aesthetics and style of the game through the controller. The design of the controller was centered around a key aspect that makes the game special, namely rotating the 2D game world in 3D space. The design of the controller was also greatly inspired by old nintendo controllers. The controller was found to enhance immersion for the player due to a more direct mapping of the controls and engaging interaction.",
             "implementation": "The inside of the controller consists of eleven momentary switches placed strategically around the different face of the controller. Most of the switches were placed directly under the button pressing them. The cube in the middle of the controller used to rotate the game world was made by using four momentary switches which were activated by small pins rotating along with the cube. All swiches were connected to an Arduino Pro Mini powered by three 1.2V AAA batteries. This was necessary to do in order to make the controller wireless. The controller controls the game by communicating (via Bluetooth) with a Java receiver program on the computer running the game. The physical 3D printed part of the Fez Controller was modelled in Blender."
         },
-        "tags": ["Physical design", "3D Modelling", "3D Printing", "Maya", "Arduino", "Java", "Prototyping"]
+        "tags": ["Physical design", "Interaction Design", "3D Prototyping", "3D Modelling", "3D Printing", "Maya", "Arduino", "Java", "Prototyping"]
     },
     {"id": 5, "name": "Floating Lamp", "navImage": "img/projects/floating-lamp/nav.png", "image": "",
         "video": "https://youtu.be/rlEE1R5TlMU",
@@ -58,16 +58,16 @@
     {"id": 8, "name": "Online Shift Planner", "navImage": "img/projects/online-shift-planner/nav.png", "image": "img/projects/online-shift-planner/project-image.png",
         "video": "",
         "description": {
-            "project": "",
-            "implementation": ""
+            "project": "The basis of this project was to develop an IT solution for a company by using the principles of experimental system development. This project was done in collaboration with a Danish company called Sport Solution, who specialises in membership systems for fitness centres and sports clubs, and Danish fitness centres Seier Fitness and Fitnessdk. Through a practical approach to experimental system development, a rostering system for managing fitness centres was developed including elements from contextual design and conceptual design processes along with a future workshop, several brainstorming sessions and several iterations of prototype testing.",
+            "implementation": "The final prototype of the development process was an online work schedule and shift planner for employess at fitness centres. The prototype was implemented using backbone.js and parse.com (back-end)"
         },
         "tags": ["Seier Fitness", "Experimental System Design", "UX Design", "UI Design", "Workshops", "Contextual Inquiry", "Prototyping", "HTML", "CSS", "Javascript"]
     },
     {"id": 9, "name": "Sphere", "navImage": "img/projects/sphere/nav.png", "image": "img/projects/sphere/project-image.png",
         "video": "",
         "description": {
-            "project": "",
-            "implementation": ""
+            "project": "Sphere is the name of a proximity based social network application developed for my bachelor's project. The goal of the project was to create a platform facilitating student-to-student contact with the purpose of sharing knowledge making it possible for students to utilize their unique skillset and areas of expertise to help others. The focus of the project was on ideation, validation, and testing.",
+            "implementation": "The nature of the bachelor's project was mainly conceptual. The prototype was developed as a native iOS application implementing only core features needed to demonstrate the concept."
         },
         "tags": ["Bachelor's Project", "Knowledge Sharing", "Social Network", "UX Design", "Mobile Development", "UI Design", "Photoshop", "Native iOS", "Xcode", "Obj-C", "Parse"]
     }
