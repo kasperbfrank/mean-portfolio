@@ -5,6 +5,12 @@
   }
 }
 
+@mixin respond-to-double($width, $height) {
+  @media (max-width: $width) and (max-height: $height) {
+    @content
+  }
+}
+
 @mixin transition($args...) {
   -webkit-transition: $args;
   -moz-transition: $args;
@@ -141,6 +147,9 @@ h3 {
     @include respond-to(320px) {
       font-size: 1.8em;
     };
+    @include respond-to-double(736px, 414px) {
+        font-size: 2.5em;
+    };
     strong {
       color: $tertiary-color;
     }
@@ -165,6 +174,9 @@ h3 {
     };
     @include respond-to(375px) {
       font-size: 1.7em;
+    };
+    @include respond-to-double(736px, 414px) {
+        visibility: hidden;
     };
   }
 }
@@ -200,6 +212,9 @@ h3 {
       cursor: pointer;
     }
   }
+  @include respond-to-double(736px, 414px) {
+      visibility: hidden;
+  };
 }
 
 .projects-container {
