@@ -20,7 +20,7 @@
 
             function typeFunc() {
                 scope.safeApply(function() {
-                    var stringsArray = ['IT-products.', 'prototypes.', 'websites.', 'native applications.'];
+                    var stringsArray = ['IT-products.', 'prototypes.', 'websites.', 'native applications.', 'meaningful experiences', 'beautiful interactions'];
                     jQuery('#typed').typed({
                         strings: stringsArray,
                         typeSpeed: 50,
