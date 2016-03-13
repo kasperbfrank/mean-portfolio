@@ -27,6 +27,9 @@
   filter: $args;
 }
 
+// fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300);
+
 // VARIABLES
 
 // colors
@@ -81,12 +84,12 @@ h2 {
   margin-bottom: 50px;
   text-align: center;
   font-size: 3.5em;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 h3 {
   font-size: 2.5em;
-  font-weight: lighter;
+  font-weight: 100;
   text-align: center;
 }
 
@@ -167,10 +170,10 @@ h3 {
   h3 {
     color: white;
     font-size: 2.5em;
-    font-weight: lighter;
+    font-weight: 100;
     @include respond-to(414px) {
       font-size: 2em;
-      font-weight: 200;
+      font-weight: 300;
     };
     @include respond-to(375px) {
       font-size: 1.7em;
