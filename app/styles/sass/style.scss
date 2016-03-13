@@ -141,8 +141,11 @@ h3 {
     @include respond-to(1280px) {
       font-size: 4em;
     };
+    @include respond-to(1024px) {
+      font-size: 4.2em;
+    };
     @include respond-to(414px) {
-      font-size: 3.3em;
+      font-size: 3em;
     };
     @include respond-to(375px) {
       font-size: 2.5em;
