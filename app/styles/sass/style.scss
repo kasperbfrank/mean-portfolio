@@ -89,6 +89,10 @@ h2 {
       font-size: 2.8em;
       margin-top: 3vh;
   };
+  @include respond-to(375px) {
+      font-size: 2.5em;
+      margin-top: 3vh;
+  };
 }
 
 h3 {

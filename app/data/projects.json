@@ -39,7 +39,7 @@
         },
         "tags": ["Physical Design", "Prototyping", "Shape Change", "Light Design", "Arduino", "Actuator", "Proximity Sensor"]
     },
-    {"id": 6, "name": "Volkswagen Project", "navImage": "img/projects/volkswagen-project/nav.png", "image": "img/projects/volkswagen-project/project-image.png",
+    {"id": 6, "name": "VW Project", "navImage": "img/projects/volkswagen-project/nav.png", "image": "img/projects/volkswagen-project/project-image.png",
         "video": "",
         "description": {
             "project": "The Volkswagen Project was an opportunity to work with a major company and design in-car technology for the car of the future and present concepts and prototypes at the Volkswagen headquarters in Wolfsburg, Germany. The project was part of a university course called 'Innovation Project' in which groups had to go through a design process and come up with innovative solutions to a specific case over the course of seven weeks.",
@@ -55,7 +55,7 @@
         },
         "tags": ["Kitesurfing", "Analysis", "Outdoor", "Prototyping", "Resistant Design", "Arduino", "Sensor Fusion", "Accelerometer", "Gyroscope", "Strain Gauge", "Anemometer"]
     },
-    {"id": 8, "name": "Online Shift Planner", "navImage": "img/projects/online-shift-planner/nav.png", "image": "img/projects/online-shift-planner/project-image.png",
+    {"id": 8, "name": "Shift Planner", "navImage": "img/projects/online-shift-planner/nav.png", "image": "img/projects/online-shift-planner/project-image.png",
         "video": "",
         "description": {
             "project": "The basis of this project was to develop an IT solution for a company by using the principles of experimental system development. This project was done in collaboration with a Danish company called Sport Solution, who specialises in membership systems for fitness centres and sports clubs, along with Danish fitness centres Seier Fitness and Fitnessdk. Through a practical approach to experimental system development utilizing elements from contextual design and conceptual design processes along with a future workshop, several brainstorming sessions and several iterations of prototype testing, a rostering system for managing fitness centres was developed.",
