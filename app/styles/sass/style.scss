@@ -85,6 +85,10 @@ h2 {
   text-align: center;
   font-size: 3.5em;
   font-weight: 100;
+  @include respond-to(375px) {
+      font-size: 2.8em;
+      margin-top: 3vh;
+  };
 }
 
 h3 {
@@ -398,6 +402,22 @@ h3 {
 }
 
 .project-container {
+    position: relative;
+    .back-button {
+        opacity: 0.8;
+        position: absolute;
+        margin-top: 2.5vh;
+        padding: 8px;
+        left: 25px;
+        width: 3.5em;
+        height: 3.5em;
+        @include respond-to(414px) {
+            left: 10px;
+        };
+        @include respond-to(375px) {
+            margin-top: 2.7vh;
+        };
+    }
     .video {
         position: relative;
         padding-bottom: 56.25%;

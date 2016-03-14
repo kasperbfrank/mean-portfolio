@@ -1,6 +1,7 @@
 <div id="load-overlay-white" pf-load></div>
-<h2>{{pfProjectCtrl.currentProject.name}}</h2>
 <div class="container project-container">
+    <a href="/#/"><img class="back-button" src="img/ui/back-button.png" alt="back button" /></a>
+    <h2>{{pfProjectCtrl.currentProject.name}}</h2>
     <ng-switch on="pfProjectCtrl.currentProject.image || '_undefined_'">
         <div ng-switch-when="_undefined_">
             <anguvideo class="video" ng-model="pfProjectCtrl.currentProject.video"></anguvideo>
