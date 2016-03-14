@@ -89,7 +89,7 @@ h2 {
       font-size: 2.8em;
       margin-top: 3vh;
   };
-  @include respond-to(375px) {
+  @include respond-to(320px) {
       font-size: 2.5em;
       margin-top: 3vh;
   };

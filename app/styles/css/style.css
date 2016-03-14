@@ -54,7 +54,7 @@ h2 {
     margin-top: 3vh;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 320px) {
   /* line 82, ../sass/style.scss */
   h2 {
     font-size: 2.5em;
