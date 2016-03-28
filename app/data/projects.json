@@ -59,7 +59,7 @@
         "video": "",
         "description": {
             "project": "The basis of this project was to develop an IT solution for a company by using the principles of experimental system development. This project was done in collaboration with a Danish company called Sport Solution, who specialises in membership systems for fitness centres and sports clubs, along with Danish fitness centres Seier Fitness and Fitnessdk. Through a practical approach to experimental system development utilizing elements from contextual design and conceptual design processes along with a future workshop, several brainstorming sessions and several iterations of prototype testing, a rostering system for managing fitness centres was developed.",
-            "implementation": "The final prototype of the development process was an online work schedule and shift planner for employess at fitness centres. The prototype was implemented using backbone.js and parse.com (back-end)"
+            "implementation": "The final prototype of the development process was an online work schedule and shift planner for employess at fitness centres. The prototype was implemented using backbone.js and parse.com (back-end)."
         },
         "tags": ["Seier Fitness", "Experimental System Design", "UX Design", "UI Design", "Workshops", "Contextual Inquiry", "Prototyping", "HTML", "CSS", "Javascript"]
     },

@@ -15,8 +15,6 @@
         return directive;
 
         function linkFunc(scope, el, attr, ctrl) {
-            // el.bind('mouseover', handleMouseover);
-            // jQuery().bind('mouseleave', handleMouseleave);
             jQuery('.slideshow, #next, #prev').bind('mouseover', handleMouseover);
             jQuery('.slideshow').bind('mouseleave', handleMouseleave);
 

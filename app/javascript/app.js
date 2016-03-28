@@ -7,7 +7,6 @@
       'ngRoute',
       'angular-loading-bar',
       'ngAnimate',
-    //   'slick',
       'anguvideo'
     ])
     .config(_configApply);
