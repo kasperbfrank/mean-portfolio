@@ -5,20 +5,17 @@
     .module('Portfolio')
     .controller('PortfolioProjectController', PortfolioProjectController);
 
-  PortfolioProjectController.$inject = ['$scope', '$routeParams', 'projectFactory'];
+  PortfolioProjectController.$inject = ['$scope', '$routeParams', 'projectData'];
 
   /* @ngInject */
-  function PortfolioProjectController($scope, $routeParams, projectFactory) {
+  function PortfolioProjectController($scope, $routeParams, projectData) {
     var vm = this;
     vm.currentProject = {};
-
-    // testVar to hold testdb variable
-    vm.testVar = {};
 
     activate();
 
     function activate() {
-      projectFactory.all().success(function(data) {
+      projectData.all().success(function(data) {
         for (var i = 0, x = data.length; i < x; i++) {
           var proj = data[i];
           if (proj.name === $routeParams.project) {
@@ -26,11 +23,6 @@
           }
         }
       });
-
-    //   Test of rails API...
-    //   projectFactory.getFirst().success(function(data) {
-    //      vm.testVar = data;
-    //   });
     }
   }
 })();

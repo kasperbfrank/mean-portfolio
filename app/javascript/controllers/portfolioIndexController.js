@@ -5,10 +5,10 @@
         .module('Portfolio')
         .controller('PortfolioIndexController', PortfolioIndexController);
 
-    PortfolioIndexController.$inject = ['$scope','$window' ,'projectFactory'];
+    PortfolioIndexController.$inject = ['$scope','$window' ,'projectData'];
 
     /* @ngInject */
-    function PortfolioIndexController($scope, $window, projectFactory) {
+    function PortfolioIndexController($scope, $window, projectData) {
         var vm = this;
         vm.projects = [];
 
@@ -19,15 +19,9 @@
         }
 
         function getProjects() {
-          projectFactory.all().success(function(data) {
+          projectData.all().success(function(data) {
             vm.projects = data;
           });
         }
-
-        $scope.$on('$locationChangeStart', function() {
-            // $window.scrollTo(0, 0); // attempt to make sure window would be at (0, 0) when going back from project. Sort of worked - but not on phones in portrait mode.
-            jQuery('#load-overlay').css('opacity', '1');
-            jQuery('#load-overlay-white').css('opacity', '1');
-        });
     }
 })();

@@ -3,12 +3,12 @@
 
   angular
     .module('Portfolio')
-    .factory('projectFactory', projectFactory);
+    .factory('projectData', projectData);
 
-  projectFactory.$inject = ['$http'];
+  projectData.$inject = ['$http'];
 
   /* @ngInject */
-  function projectFactory($http) {
+  function projectData($http) {
     var service = {
       all: getAll,
       getFirst: getFirst
