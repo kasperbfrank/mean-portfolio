@@ -23,11 +23,12 @@
       });
     }
 
-    function getFirst() {
-        return $http({
-            method: 'GET',
-            url: 'http://localhost:3000/contacts/1'
-        });
-    }
+    // ----- EXPERIMENTAL RAILS API -----
+    // function getFirst() {
+    //     return $http({
+    //         method: 'GET',
+    //         url: 'http://localhost:3000/contacts/1'
+    //     });
+    // }
   }
 })();
