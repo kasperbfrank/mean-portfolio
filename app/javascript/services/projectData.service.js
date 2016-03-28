@@ -10,8 +10,8 @@
   /* @ngInject */
   function projectData($http) {
     var service = {
-      all: getAll,
-      getFirst: getFirst
+      all: getAll
+    //   getFirst: getFirst // rails api.
     };
 
     return service;
