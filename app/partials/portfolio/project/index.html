@@ -10,13 +10,6 @@
             <img ng-src="{{pfProjectCtrl.currentProject.image}}" alt="project image" />
         </div>
     </ng-switch>
-    <!-- <div class="slideshow">
-        <slick fade=true speed=1000 dots=true autoplay=true autoplay-speed=4000 ng-if="pfProjectCtrl.currentProject.images.length">
-            <div ng-repeat="image in pfProjectCtrl.currentProject.images">
-                <img ng-src="{{image}}" alt="project image" />
-            </div>
-        </slick>
-    </div> -->
     <div ng-include="'partials/portfolio/project/pf-project-skills.html'"></div>
     <div class="row">
         <div ng-include="'partials/portfolio/project/pf-project-project.html'"></div>
