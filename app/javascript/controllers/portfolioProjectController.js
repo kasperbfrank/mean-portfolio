@@ -15,14 +15,11 @@
     activate();
 
     function activate() {
-      projectData.all().success(function(data) {
-        for (var i = 0, x = data.length; i < x; i++) {
-          var proj = data[i];
-          if (proj.name === $routeParams.project) {
-            vm.currentProject = proj;
-          }
-        }
-      });
+        projectData.getProject($routeParams.project).then(function(project) {
+            vm.currentProject = project;
+        }, function(reason) {
+            console.log('failed: ' + reason);
+        });
     }
   }
 })();
