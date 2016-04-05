@@ -16,20 +16,14 @@
 
         function activate() {
           getProjects();
-          getGreetings();
         }
 
         function getProjects() {
-          projectData.all().success(function(data) {
-            vm.projects = data;
-          });
-        }
-
-        function getGreetings() {
-            // projectData.getGreetings().success(function(greetings) {
-            //     console.log(greetings);
-            // });
-            console.log(projectData.getGreetings());
+            projectData.all().then(function(projects) {
+                vm.projects = projects;
+            }, function(reason) {
+                console.log('failed: ' + reason);
+            });
         }
     }
 })();

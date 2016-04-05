@@ -1,4 +1,6 @@
-var mongoose = require('mongoose');
+var mongoose = require('mongoose'),
+    projectModel = require('../models/Project'),
+    greetingModel = require('../models/Greeting');
 
 module.exports = function(config) {
     mongoose.connect(config.db);
@@ -12,5 +14,7 @@ module.exports = function(config) {
     });
 
     // bootstrap models
-    require('../models/Greeting');
+    projectModel.createDefaultProjects();
+    // require('../models/Greeting');
+
 }

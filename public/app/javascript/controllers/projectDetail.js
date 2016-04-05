@@ -15,7 +15,11 @@
     activate();
 
     function activate() {
-        projectData.getProject($routeParams.project).then(function(project) {
+        getProject($routeParams.project);
+    }
+
+    function getProject(name) {
+        projectData.getProject(name).then(function(project) {
             vm.currentProject = project;
         }, function(reason) {
             console.log('failed: ' + reason);

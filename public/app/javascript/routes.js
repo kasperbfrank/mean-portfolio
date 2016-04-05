@@ -4,7 +4,7 @@
       .when('/', {
         templateUrl: "partials/portfolio/index.html",
         controller: 'ProjectsController',
-        controllerAs: 'pfIndexCtrl'
+        controllerAs: 'projects'
       })
       .when('/portfolio/:project', {
         templateUrl: "partials/portfolio/project/index.html",

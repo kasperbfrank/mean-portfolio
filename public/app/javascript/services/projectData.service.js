@@ -11,59 +11,33 @@
   function projectData($http, $q) {
     var service = {
       all: getAll,
-      getProject: getProject,
-      getGreetings: getGreetings
-    //   getFirst: getFirst // rails api.
+      getProject: getProject
     };
 
-    var dataPath = 'data/projects.json'
+    var apiBasePath = 'api/projects'
 
     return service;
 
     function getAll() {
-        return $http({
-            method: 'GET',
-            url: dataPath
-        });
+        return query('GET', apiBasePath);
     }
 
     function getProject(name) {
-        var dfd = $q.defer();
-        $http({
-            method: 'GET',
-            url: dataPath
-        }).success(function(projects) {
-            for (var i = 0, x = projects.length; i < x; i++) {
-                var project = projects[i];
-                if (project.name === name) {
-                    dfd.resolve(project);
-              }
-            }
-        }, function(reason) {
-            dfd.reject(reason)
-        });
-        return dfd.promise;
+        var url = apiBasePath + '/' + name;
+        return query('GET', url);
     }
 
-    function getGreetings() {
+    function query(method, url) {
         var dfd = $q.defer();
         $http({
-            method: 'GET',
-            url: '/api/greetings'
-        }).then(function(greetings) {
-            dfd.resolve(greetings)
+            method: method,
+            url: url
+        }).then(function(result) {
+            dfd.resolve(result.data);
         }, function(reason) {
             dfd.reject(reason);
         });
         return dfd.promise;
     }
-
-    // ----- EXPERIMENTAL RAILS API -----
-    // function getFirst() {
-    //     return $http({
-    //         method: 'GET',
-    //         url: 'http://localhost:3000/contacts/1'
-    //     });
-    // }
   }
 })();
