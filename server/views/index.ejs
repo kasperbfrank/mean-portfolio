@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="Portfolio" lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="Portfolio" lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="Portfolio" lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="Portfolio"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kasper Bruus Frank - Portfolio</title>
+  <meta name="description" content="Portfolio for Kasper Bruus Frank, cand.scient IT Product Development">
+  <meta name="author" content="Kasper Bruus Frank">
+  <meta name="keywords" content="kasper,bruus,frank,portfolio,web,it,product development,design,programming,news butler,projects">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta property="og:title" content="Portfolio: Kasper Bruus Frank">
+  <meta property="og:url" content="http://kasperbfrank.dk">
+  <meta property="og:image" content="http://kasperbfrank.dk/img/kasper-rust.png">
+  <meta property="og:description" content="Explore the portfolio of Kasper Bruus Frank, M. Sc. IT Product Development.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="styles/css/bootstrap.css">
+  <link rel="stylesheet" href="styles/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="styles/css/animate.css">
+  <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css" media="all">
+  <link rel="stylesheet" href="styles/css/style.css">
+</head>
+<body>
+  <div id="load-overlay" pf-load></div>
+  <!-- BODY -->
+  <div class="content" ng-view></div>
+
+  <!-- FOOTER -->
+  <div class="clearfix"></div>
+  <div class="footer">
+    <h5>Copyright &#169; 2016 kasperbfrank.dk</h5>
+  </div>
+
+  <!-- scripts -->
+
+  <script src="javascript/vendor/jquery-2.2.0.min.js"></script>
+  <script src="javascript/vendor/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/typed.js/dist/typed.min.js"></script>
+  <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="javascript/vendor/anguvideo.js"></script>
+
+
+  <!-- App -->
+  <script src="javascript/app.js"></script>
+  <script src="javascript/routes.js"></script>
+  <!-- Directives -->
+  <script src="javascript/directives/pfLoad.js"></script>
+  <script src="javascript/directives/scroll.js"></script>
+  <script src="javascript/directives/scrollToProjectsButton.js"></script>
+  <script src="javascript/directives/pfIntro.js"></script>
+  <script src="javascript/directives/cycle.js"></script>
+  <!-- Controllers -->
+  <script src="javascript/controllers/projects.js"></script>
+  <script src="javascript/controllers/projectDetail.js"></script>
+
+  <!-- Services -->
+  <script src="javascript/services/projectData.service.js"></script>
+</body>
+</html>
