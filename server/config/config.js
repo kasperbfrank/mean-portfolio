@@ -9,7 +9,7 @@ module.exports = {
     },
     production: {
         rootPath: rootPath,
-        db: 'mongodb://kasperbfrank:meantest@ds013619.mlab.com:13619/meantest', // switch this out for remote db....
+        db: 'mongodb://username:password@ds013619.mlab.com:13619/test', // switch this out for remote db....
         port: process.env.PORT || 80
     }
 }
