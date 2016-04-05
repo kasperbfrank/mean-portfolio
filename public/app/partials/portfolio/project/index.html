@@ -1,13 +1,13 @@
 <div id="load-overlay-white" pf-load></div>
 <div class="container project-container">
     <a href="/#/"><img class="back-button" src="img/ui/back-button.png" alt="back button" /></a>
-    <h2>{{pfProjectCtrl.currentProject.name}}</h2>
-    <ng-switch on="pfProjectCtrl.currentProject.image || '_undefined_'">
+    <h2>{{project.currentProject.name}}</h2>
+    <ng-switch on="project.currentProject.image || '_undefined_'">
         <div ng-switch-when="_undefined_">
-            <anguvideo class="video" ng-model="pfProjectCtrl.currentProject.video"></anguvideo>
+            <anguvideo class="video" ng-model="project.currentProject.video"></anguvideo>
         </div>
         <div ng-switch-default>
-            <img ng-src="{{pfProjectCtrl.currentProject.image}}" alt="project image" />
+            <img ng-src="{{project.currentProject.image}}" alt="project image" />
         </div>
     </ng-switch>
     <div ng-include="'partials/portfolio/project/pf-project-skills.html'"></div>

@@ -9,7 +9,7 @@
       .when('/portfolio/:project', {
         templateUrl: "partials/portfolio/project/index.html",
         controller: "ProjectDetailController",
-        controllerAs: "pfProjectCtrl"
+        controllerAs: "project"
        });
   });
 })();
