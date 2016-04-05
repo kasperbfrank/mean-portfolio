@@ -3,12 +3,12 @@
 
     angular
         .module('Portfolio')
-        .controller('PortfolioIndexController', PortfolioIndexController);
+        .controller('ProjectsController', ProjectsController);
 
-    PortfolioIndexController.$inject = ['$scope','$window' ,'projectData'];
+    ProjectsController.$inject = ['$scope','$window' ,'projectData'];
 
     /* @ngInject */
-    function PortfolioIndexController($scope, $window, projectData) {
+    function ProjectsController($scope, $window, projectData) {
         var vm = this;
         vm.projects = [];
 

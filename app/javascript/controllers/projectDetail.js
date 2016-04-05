@@ -3,12 +3,12 @@
 
   angular
     .module('Portfolio')
-    .controller('PortfolioProjectController', PortfolioProjectController);
+    .controller('ProjectDetailController', ProjectDetailController);
 
-  PortfolioProjectController.$inject = ['$scope', '$routeParams', 'projectData'];
+  ProjectDetailController.$inject = ['$scope', '$routeParams', 'projectData'];
 
   /* @ngInject */
-  function PortfolioProjectController($scope, $routeParams, projectData) {
+  function ProjectDetailController($scope, $routeParams, projectData) {
     var vm = this;
     vm.currentProject = {};
 

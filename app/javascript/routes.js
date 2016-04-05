@@ -3,12 +3,12 @@
     $routeProvider
       .when('/', {
         templateUrl: "partials/portfolio/index.html",
-        controller: 'PortfolioIndexController',
+        controller: 'ProjectsController',
         controllerAs: 'pfIndexCtrl'
       })
       .when('/portfolio/:project', {
         templateUrl: "partials/portfolio/project/index.html",
-        controller: "PortfolioProjectController",
+        controller: "ProjectDetailController",
         controllerAs: "pfProjectCtrl"
        });
   });
