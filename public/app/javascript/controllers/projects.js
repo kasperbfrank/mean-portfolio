@@ -5,10 +5,10 @@
         .module('Portfolio')
         .controller('ProjectsController', ProjectsController);
 
-    ProjectsController.$inject = ['$scope','$window' ,'projectData'];
+    ProjectsController.$inject = ['projectData'];
 
     /* @ngInject */
-    function ProjectsController($scope, $window, projectData) {
+    function ProjectsController(projectData) {
         var vm = this;
         vm.projects = [];
 

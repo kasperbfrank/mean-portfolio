@@ -5,10 +5,10 @@
     .module('Portfolio')
     .controller('ProjectDetailController', ProjectDetailController);
 
-  ProjectDetailController.$inject = ['$scope', '$routeParams', 'projectData'];
+  ProjectDetailController.$inject = ['$routeParams', 'projectData'];
 
   /* @ngInject */
-  function ProjectDetailController($scope, $routeParams, projectData) {
+  function ProjectDetailController($routeParams, projectData) {
     var vm = this;
     vm.currentProject = {};
 
